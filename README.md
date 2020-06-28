@@ -1,7 +1,9 @@
 # truck-data-analysis
+
+# Summary #
 This project is about *data engineering* and *machine learning operations*. Detail information about dataset and goal can be found in *aps_failure_description.txt* file. 
 
-STEPS FOLLOWED:
+### Steps ###
 
 1. The target column was given as strings: *pos* and *neg*. Change them to 0 and 1 for every row.
 2. Even values seem as numbers in a dataset, after reading it with pandas library, we need to check their types. For this example, they were all “object” types. To deal with numerical features, we need to convert them from object to numeric.
@@ -18,3 +20,12 @@ STEPS FOLLOWED:
 9. Because the dataset is unbalanced, “weights” technique used to customize cost function. 
 10. Confusion matrix used as score metrics. 
 
+
+## Result ##
+| Cost: ***7410$*** | Actual 0 |  Actual 1 | 
+| :---:| :---: | :---: |
+| Predicted 0 | 15284 | **8** | 
+| Predicted 1 | 341 | 367 | 
+
+This is the minimum cost(7410$) model which only miss 8 truck with 500 cost. 
+It is almost %25 better than the best cost found in Kaggle, which $9,920. https://www.kaggle.com/uciml/aps-failure-at-scania-trucks-data-set
