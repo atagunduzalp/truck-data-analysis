@@ -1,8 +1,7 @@
 # truck-data-analysis
 
 # Summary #
-This project is about *data engineering* and *machine learning operations*. Detail information about dataset and goal can be found in *aps_failure_description.txt* file. 
-
+This project is about *data engineering* and *machine learning operations*. Detail information about dataset and goal can be found in *aps_failure_description.txt* file. I also want to thank ***Galaksiya***, the company that I work for currently, for great consultancy and leadership during this work.
 ### Steps ###
 
 1. The target column was given as strings: *pos* and *neg*. Change them to 0 and 1 for every row.
