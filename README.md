@@ -1,9 +1,9 @@
 # truck-data-analysis
-Data engineering and machine learning operations.
+This project is about *data engineering* and *machine learning operations*. Detail information about dataset and goal can be found in *aps_failure_description.txt* file. 
 
 STEPS FOLLOWED:
 
-1. The target column was given as strings: “pos” and “neg”. Change them to 0 and 1 for every row.
+1. The target column was given as strings: *pos* and *neg*. Change them to 0 and 1 for every row.
 2. Even values seem as numbers in a dataset, after reading it with pandas library, we need to check their types. For this example, they were all “object” types. To deal with numerical features, we need to convert them from object to numeric.
 3. Analysed NA. 
    1. If the percentage of NA includes rows greater than 50, then dropped that column from the dataframe.
